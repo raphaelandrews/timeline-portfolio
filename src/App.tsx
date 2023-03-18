@@ -1,12 +1,14 @@
-import { ThemeProvider } from './styles/ThemeProvider';
+import { ThemeContextProvider } from './context/ThemeProvider';
+import { GlobalStyles } from './styles/GlobalStyles';
 import { ToggleButton } from './components/Button/Button';
 
 function App() {
   return (
-    <ThemeProvider>
+    <ThemeContextProvider>
+      <GlobalStyles />
       <ToggleButton />
-    </ThemeProvider>
+    </ThemeContextProvider>
   )
 }
 
-export default App
+export default App;

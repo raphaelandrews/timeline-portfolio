@@ -1,15 +1,19 @@
 import { useContext } from 'react';
-import { ThemeContext } from '../../styles/ThemeProvider';
 import styled from 'styled-components';
-import { Theme } from '../../Types/Types';
+import { ThemeContext } from '../../context/ThemeContext';
 
-const Button = styled.button<{ theme: Theme }>`
-  background-color: ${(props) => props.theme.background};
-  color: ${(props) => props.theme.foreground};
+const Button = styled.button`
+  background-color: var(--bg-color);
+  color: red;
 `;
 
 export const ToggleButton = () => {
-    const { toggleTheme } = useContext(ThemeContext);
+  const { toggleSetTheme } = useContext(ThemeContext);
 
-    return <Button onClick={toggleTheme}>Toggle Theme</Button>;
+  return (
+    <>
+      <Button onClick={() => toggleSetTheme("light")}>Toggle Theme</Button>
+      <Button onClick={() => toggleSetTheme("dark")}>Toggle Theme</Button>
+    </>
+  )
 };
