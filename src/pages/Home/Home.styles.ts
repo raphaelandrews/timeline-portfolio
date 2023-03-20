@@ -85,5 +85,37 @@ export const Text = styled.p<TextProps>`
     @media (min-width: 600px) {
         font-size: 1rem;
         margin: ${(props) => props.marginMD};
+        line-height: inherit;
     }
+`
+
+export const ListWrapper = styled.ul`
+    display: flex;
+    padding: 1rem 0 0;
+
+    li {
+        font-size: 1rem;
+        color: var(--alt-color);
+        text-align: center;
+        width: 25%;
+        padding: .75rem 1.5rem;
+        transition: .5s;
+
+        &:hover {
+            color: var(--first-color);
+            background-color: var(--bg-alt-color);
+            cursor: pointer;
+        }
+    }
+`
+
+interface ListItemProps {
+    borderBottom?: string;
+}
+
+export const ListItem = styled.span<ListItemProps>`    
+            padding: .5rem .5rem;
+            border-top: 2px solid transparent;
+            border-bottom: ${(props) => props.borderBottom};
+            transition: .5s;
 `
