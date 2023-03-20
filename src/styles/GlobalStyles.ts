@@ -42,7 +42,10 @@ export const GlobalStyles = createGlobalStyle`
     --bg-color: ${({ theme }) => theme.colors.background};
 
     //===== Fonts =====//
-    --first-font: ${({ theme }) => theme.fonts.primary}
+    --first-font: ${({ theme }) => theme.fonts.primary};
+
+    //===== Shadows =====//
+    --bs-1: hsla(0 ,0% ,20% , .2) 0px 7px 29px 0px;
   }
   
   /*=============== SCROLL BAR ===============*/

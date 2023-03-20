@@ -11,7 +11,7 @@ export const lightTheme = {
         background: 'hsl(0, 0%, 100%)',
     },
     fonts: {
-        primary: 'Patrick Hand, cursive',
+        primary: 'Inter, sans-serif',
     },
 };
 
@@ -25,9 +25,9 @@ export const darkTheme = {
         quaternary: 'hsl(240, 9%, 89%)',
         alternative: 'hsl(240, 7%, 78%)',
         backgroundAlt: 'hsl(240, 6%, 13%)',
-        background: 'hsl(0, 0%, 4%)',
+        background: 'hsl(210, 40%, 2%)',
     },
     fonts: {
-        primary: 'Patrick Hand, cursive',
+        primary: 'Inter, sans-serif',
     },
 };
