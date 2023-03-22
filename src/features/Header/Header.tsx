@@ -1,24 +1,34 @@
-import { Link } from "react-router-dom";
+import { useState } from 'react';
 
-import { HeaderWrapper } from "./Header.styles";
-import { Button } from "@/components";
-import { Logo, ColorSwatch } from "@/assets/svg";
+import * as C from './Header.styles';
+import { Container, Title } from '@/components';
+import { Verified } from '@/assets/svg';
+
+import bg from "../../assets/img/retrowave-sunset.png";
+import profileImg from "../../assets/img/profile.jpeg";
+
 
 export const Header = () => {
-    return (
-        <HeaderWrapper>
-            <Link to="/">
-                <Logo width="2rem" height="2rem" />
-            </Link>
-            <Button
-                padding=".5rem"
-                border="none"
-                borderRadius=".5rem"
-                backgroundColor="transparent"
-                backgroundColorHover="var(--bg-alt-color)"
-            >
-                <ColorSwatch width="1.5rem" height="1.5rem" />
-            </Button>
-        </HeaderWrapper>
-    )
+  return (
+    <header>
+      <Container width='100%' maxWidth='780px'>
+        <>
+          <C.Background src={bg} alt="Profile Wallpaper" />
+          <C.Wrapper>
+            <C.BioWrapper>
+              <C.Profile src={profileImg} alt="Raphael Andrews" />
+              <C.Bio>
+                <C.TitleWrapper>
+                  <Title text='Raphael Andrews' fontSize='1.5rem' fontSizeLG='2rem' />
+                  <Verified width='1.25rem' height='1.25rem' />
+                </C.TitleWrapper>
+              </C.Bio>
+            </C.BioWrapper>
+            <C.Text fontWeight='400' margin='1.5rem 0 0 0' marginMD='1.5rem 0 0 1rem'>🔥 Building creative things on web </C.Text>
+            <C.Text fontWeight='400' margin='.5rem 0 0 0' marginMD='.5rem 0 0 1rem'>💾 Frontend Developer. JavaScript. TypeScript. React. NodeJS. KoaJS. Prisma</C.Text>
+          </C.Wrapper>
+          </>
+      </Container>
+    </header>
+  )
 }
