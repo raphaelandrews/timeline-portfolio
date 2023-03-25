@@ -4,7 +4,7 @@ import { ThemeProvider } from "../styles/ThemeProvider";
 import { ThemeContext } from "./ThemeContext";
 import { lightTheme, darkTheme } from "../styles/theme";
 import { GlobalStyles } from "../styles/GlobalStyles";
-import { Theme } from "../Types/Types";
+import { Theme } from "../types/Types";
 
 type ThemeProviderProps = {
   children: ReactNode;
