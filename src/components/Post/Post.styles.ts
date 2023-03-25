@@ -9,8 +9,9 @@ export const PostDefault = styled.article<PostProps>`
     grid-template-columns: auto 1fr;
     gap: .75rem;
     padding: 1rem;
+    border-radius: .5rem;
 
-    img {
+    .post__img {
         width: 3rem;
         border-radius: 50%;
         aspect-ratio: 1/1;
@@ -59,9 +60,23 @@ export const PostDefault = styled.article<PostProps>`
     .post__content {
         font-weight: 400;
         margin-bottom: 1rem;
+
+        a {
+            color: var(--fourth-color);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
     
     .post__first {
         margin-top: .5rem;
+    }
+
+    .post__mainImg {
+        width: 100%;
+        border-radius: .5rem;
+        aspect-ratio: 3/2;
     }
 `

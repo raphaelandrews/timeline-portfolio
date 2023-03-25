@@ -4,6 +4,7 @@ import { PostDefault } from "./Post.styles"
 interface PostProps {
     img: string;
     emoji: string;
+    image: JSX.Element;
     content: JSX.Element;
     children?: ReactNode;
 }
@@ -11,7 +12,7 @@ interface PostProps {
 export const Post = (props: PostProps) => {
     return (
         <PostDefault>
-            <img src={props.img} alt="Andrews" />
+            <img src={props.img} alt="Andrews" className="post__img" />
             <div>
                 <div className="post__title">
                     <p>Andrews</p>
@@ -22,6 +23,7 @@ export const Post = (props: PostProps) => {
                 <p className="post__emoji">{props.emoji}</p>
 
                 {props.content}
+                {props.image}
             </div>
         </PostDefault>
     )

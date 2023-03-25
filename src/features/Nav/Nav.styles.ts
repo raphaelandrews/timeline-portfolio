@@ -9,6 +9,10 @@ export const NavWrapper = styled.nav`
     box-shadow: var(--bs-1);
     z-index: 1;
 
+    a {
+        display: flex;
+    }
+
     img {
         width: 2rem;
         height: 2rem;
