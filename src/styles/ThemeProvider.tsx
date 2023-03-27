@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Theme } from '../Types/Types';
+import { Theme } from '../types/Types';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 
 type ThemeProviderProps = {

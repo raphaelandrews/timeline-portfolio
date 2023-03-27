@@ -29,6 +29,10 @@ export const GlobalStyles = createGlobalStyle`
     color: var(--first-color);
   }
 
+  ul {
+    list-style: none;
+  }
+
   :root {
     //===== Color =====//
     --first-color: ${({ theme }) => theme.colors.primary};

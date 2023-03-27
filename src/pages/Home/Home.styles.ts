@@ -1,42 +1,36 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-    position: relative;
+export const Wrapper = styled.section`
+    padding-top: 2rem;
 `
 
-export const Background = styled.img`
-    width: 100%;
-    aspect-ratio: 2/1;
-    object-fit: cover;
+export const ListWrapper = styled.ul`
+    display: flex;
+    padding: 1rem 0 0;
 
-    @media (min-width: 600px) {
-        border-radius: 4rem;
-        aspect-ratio: 3/1;
+    li {
+        font-size: 1rem;
+        color: var(--alt-color);
+        text-align: center;
+        width: 25%;
+        padding: .75rem 0;
+        transition: .5s;
+
+        &:hover {
+            color: var(--first-color);
+            background-color: var(--bg-alt-color);
+            cursor: pointer;
+        }
     }
 `
 
-export const Profile = styled.img`
-    position: absolute;
-    left: 2rem;
-    bottom: 0;
-    transform: translateY(50%);
-    width: 5.5rem;
-    border: 6px solid var(--bg-color);
-    border-radius: 50%;
-    aspect-ratio: 1/1;
+interface ListItemProps {
+    borderBottom?: string;
+}
 
-    @media (min-width: 400px) {
-        left: 3rem;
-        width: 7rem;
-    }
-
-    @media (min-width: 600px) {  
-        left: 4rem;    
-        border: 8px solid var(--bg-color);
-    }
-
-    @media (min-width: 800px) {
-        left: 5rem;
-        width: 8rem;
-    }
+export const ListItem = styled.span<ListItemProps>`    
+    padding: .5rem .5rem;
+    border-top: 2px solid transparent;
+    border-bottom: ${(props) => props.borderBottom};
+    transition: .5s;
 `

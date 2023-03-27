@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Header, Footer } from "@/features";
+import { Nav, Footer, Header } from "@/features";
 import { Home } from "@/pages";
 
 function RoutesApp() {
 
     return (
         <BrowserRouter>
+            <Nav />
             <Header />
             <main>
                 <Routes>
