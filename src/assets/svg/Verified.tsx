@@ -1,4 +1,4 @@
-import { IconTypes } from "../../types/Types";
+import { IconTypes } from "../../Types/Types";
 
 export const Verified: React.FC<IconTypes> = (props: IconTypes) => {
     return (
