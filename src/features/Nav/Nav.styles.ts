@@ -18,6 +18,12 @@ export const NavWrapper = styled.nav`
         height: 2rem;
     }
 
+    button {
+        svg {
+            display: flex;
+        }
+    }
+
     @media (min-width: 600px) {  
         box-shadow: none;
     }

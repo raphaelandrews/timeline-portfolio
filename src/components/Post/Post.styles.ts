@@ -9,16 +9,18 @@ export const PostDefault = styled.article<PostProps>`
     grid-template-columns: auto 1fr;
     gap: .75rem;
     padding: 1rem;
+    margin-bottom: 1rem;
     border-radius: .5rem;
+    transition: .5s;
+
+    &:hover {
+        background-color: var(--bg-alt-color);
+    }
 
     .post__img {
         width: 3rem;
         border-radius: 50%;
         aspect-ratio: 1/1;
-    }
-
-    @media (min-width: 800px) {  
-     
     }
 
     .post__title {
@@ -54,7 +56,7 @@ export const PostDefault = styled.article<PostProps>`
         padding: .25rem .75rem;
         margin-top: .25rem;
         border-radius: 100px;
-        background-color: var(--bg-alt-color);
+        background-color: var(--fourth-color);
     }
 
     .post__content {
@@ -62,7 +64,7 @@ export const PostDefault = styled.article<PostProps>`
         margin-bottom: 1rem;
 
         a {
-            color: var(--fourth-color);
+            color: var(--second-color);
 
             &:hover {
                 text-decoration: underline;

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import { NavWrapper } from "./Nav.styles";
 import { Button } from "@/components";
-import { Logo, ColorSwatch } from "@/assets/svg";
+import { Logo, Command } from "@/assets/svg";
 
 export const Nav = () => {
     return (
@@ -17,7 +17,7 @@ export const Nav = () => {
                 backgroundColor="transparent"
                 backgroundColorHover="var(--bg-alt-color)"
             >
-                <ColorSwatch width="1.5rem" height="1.5rem" />
+                <Command width="1.5rem" height="1.5rem" />
             </Button>
         </NavWrapper>
     )
