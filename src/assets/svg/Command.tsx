@@ -1,4 +1,4 @@
-import { IconTypes } from "../../Types/Types";
+import { IconTypes } from "../../types/Types";
 
 export const Command: React.FC<IconTypes> = (props: IconTypes) => {
     return (
