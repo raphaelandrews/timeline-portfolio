@@ -11,7 +11,9 @@ export const Next: React.FC<IconTypes> = (props: IconTypes) => {
             stroke="var(--alt-color)"
             strokeWidth="2"
             strokeLinecap="round"
-            strokeLinejoin="round">
+            strokeLinejoin="round"
+            aria-label="Next icon"
+            >
             <polyline points="9 18 15 12 9 6"></polyline>
         </svg>
     );

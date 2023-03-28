@@ -12,6 +12,7 @@ export const Pagination = styled.div`
     align-items: center;
     gap: 1rem;
     color: var(--alt-color);
+    margin-top: 2rem;
 
     .pagination__nav {
         display: flex;
@@ -25,7 +26,7 @@ export const InputWrapper = styled.div`
     gap: .75rem;
 
     @media (min-width: 600px) {
-        position: absolute;
+       
         right: 1rem;
     }
 
@@ -39,14 +40,12 @@ export const InputWrapper = styled.div`
 export const Input = styled.input`
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: 500;
+    text-align: center;
     padding: .25rem .5rem;
     width: 2rem;
     border: none;
     border-radius: .25rem;
     background-color: var(--first-color);
-
- 
 
     &:focus {
         outline: none;

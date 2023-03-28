@@ -1,12 +1,13 @@
 import { IconTypes } from "../../types/Types";
 
-export const JS: React.FC<IconTypes> = (props: IconTypes) => {
+export const JavaScript: React.FC<IconTypes> = (props: IconTypes) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width={props.width}
             height={props.height}
             viewBox="0 0 1052 1052"
+            aria-label="JS icon"
         >
             <path
                 fill="#f0db4f"

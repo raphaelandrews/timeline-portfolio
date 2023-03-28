@@ -1,7 +1,7 @@
 import { Post } from "@/components";
+import { HTML, CSS } from "@/assets/svg";
 import profileImg from "../assets/img/profile.jpeg";
 import mainImg from "../assets/img/3-column-preview-card.jpg";
-import { HTML, CSS } from "@/assets/svg";
 
 export const ThreeColumnPreviewCard = () => {
     return (

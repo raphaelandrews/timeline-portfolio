@@ -1,7 +1,7 @@
 import { Post } from "@/components";
+import { HTML, CSS, JavaScript } from "@/assets/svg";
 import profileImg from "../assets/img/profile.jpeg";
 import mainImg from "../assets/img/interactive-rating.jpg";
-import { HTML, CSS, JS } from "@/assets/svg";
 
 export const InteractiveRating = () => {
     return (
@@ -23,7 +23,7 @@ export const InteractiveRating = () => {
                     <img src={mainImg} alt="Interactive Rating" className="post__mainImg" />
                 </a>
             }
-            techs={[<HTML width="1rem" />, <CSS width="1rem" />, <JS width="1rem" />]}
+            techs={[<HTML width="1rem" />, <CSS width="1rem" />, <JavaScript width="1rem" />]}
         />
     )
 }

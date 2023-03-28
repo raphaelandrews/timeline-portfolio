@@ -8,6 +8,7 @@ export const HTML: React.FC<IconTypes> = (props: IconTypes) => {
             width={props.width}
             height={props.height}
             fill="none"
+            aria-label="HTML icon"
         >
             <path d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z"
                 fill="#e34f26"

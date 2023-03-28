@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import * as C from "./Feed.styles";
-import { InteractiveRating, OrderSummary, ThreeColumnPreviewCard, QRcode, ProfileCardComponent, NftCard, MovieApp } from "@/posts";
+import { InteractiveRating, OrderSummary, ThreeColumnPreviewCard, QRcode, ProfileCardComponent, NftCard, MovieApp, AndrewsOS, EcommerceProductPage, Bookstore } from "@/posts";
 import { Button } from "@/components";
 import { StatsPreviewCard } from "@/posts/StatsPreviewCard";
 import { Next, Previous } from "@/assets/svg";
 
 export const Feed = () => {
-  const itemsPerPage = 2;
+  const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
   const numItems = 8;
 
@@ -16,6 +16,9 @@ export const Feed = () => {
   const endIndex = startIndex + itemsPerPage;
 
   const itemsToRender = [
+    <Bookstore key="bookstore" />,
+    <EcommerceProductPage key="ecommerce-product-page" />,
+    <AndrewsOS key="andrewsOS" />,
     <MovieApp key="movie-app" />,
     <NftCard key="nft-card" />,
     <ProfileCardComponent key="profile-card" />,
@@ -28,7 +31,7 @@ export const Feed = () => {
 
   const handlePageChange = (event: { target: { value: string } }) => {
     let pageNumber = parseInt(event.target.value);
-    
+
     if (pageNumber > totalPages) {
       pageNumber = totalPages;
     }
@@ -79,8 +82,8 @@ export const Feed = () => {
           </Button>
         </div>
         <C.InputWrapper>
-          Go to page
-          <C.Input type="number" min="1" max={totalPages} onChange={handlePageChange} ref={inputRef} onKeyPress={(event) => {
+        <label htmlFor="page-input">Go to</label>
+          <C.Input id="page-input" type="number" min="1" max={totalPages} onChange={handlePageChange} ref={inputRef} onKeyPress={(event) => {
             if (event.key === "-" || event.key === "+") {
               event.preventDefault();
             }

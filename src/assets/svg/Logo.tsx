@@ -2,7 +2,14 @@ import { IconTypes } from "../../types/Types";
 
 export const Logo: React.FC<IconTypes> = (props: IconTypes) => {
     return (
-        <svg width={props.width} height={props.height} viewBox="0 0 707 647" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={props.width}
+        height={props.height}
+        viewBox="0 0 707 647"
+        fill="none"
+        aria-label="Logo icon"
+        >
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"

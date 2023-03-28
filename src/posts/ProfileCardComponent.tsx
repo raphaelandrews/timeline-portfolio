@@ -1,7 +1,7 @@
 import { Post } from "@/components";
 import profileImg from "../assets/img/profile.jpeg";
 import mainImg from "../assets/img/profile-card-component.jpg";
-import { HTML, CSS, JS } from "@/assets/svg";
+import { HTML, CSS, JavaScript } from "@/assets/svg";
 
 
 export const ProfileCardComponent = () => {
@@ -24,7 +24,7 @@ export const ProfileCardComponent = () => {
                     <img src={mainImg} alt="Profile Card Component" className="post__mainImg" />
                 </a>
             }
-            techs={[<HTML width="1rem" />, <CSS width="1rem" />, <JS width="1rem" />]}
+            techs={[<HTML width="1rem" />, <CSS width="1rem" />, <JavaScript width="1rem" />]}
         />
     )
 }

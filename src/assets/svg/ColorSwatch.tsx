@@ -6,7 +6,9 @@ export const ColorSwatch: React.FC<IconTypes> = (props: IconTypes) => {
             width={props.width}
             height={props.height}
             viewBox="0 0 24 24"
-            fill="none">
+            fill="none"
+            aria-label="Color Swatch icon"
+            >
             <path
                 stroke="var(--first-color)"
                 strokeLinecap="round"

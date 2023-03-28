@@ -88,5 +88,6 @@ export const PostDefault = styled.article<PostProps>`
         width: 100%;
         border-radius: .5rem;
         aspect-ratio: 3/2;
+        object-fit: cover;
     }
 `

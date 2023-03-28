@@ -1,6 +1,6 @@
 import { IconTypes } from "../../types/Types";
 
-export const TS: React.FC<IconTypes> = (props: IconTypes) => {
+export const TypeScript: React.FC<IconTypes> = (props: IconTypes) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +8,7 @@ export const TS: React.FC<IconTypes> = (props: IconTypes) => {
             width={props.width}
             height={props.height}
             fill="none"
+            aria-label="TS icon"
         >
             <rect
                 fill="#3178c6"

@@ -9,7 +9,7 @@ export const MovieApp = () => {
             img={profileImg}
             user="Andrews"
             date="27 mar 2023"
-            emoji="🔨 Working"
+            emoji="📽️ Movie Time"
             content={
                 <>
                     <p className="post__content post__first">Movie App 🎞️</p>
@@ -22,7 +22,7 @@ export const MovieApp = () => {
 
             image={
                 <a href="https://raphaelandrews.github.io/3-Column-Preview-Card/" target="_blank">
-                    <img src={mainImg} alt="Movie App Banner" className="post__mainImg" />
+                    <img src={mainImg} alt="Movie App Preview" className="post__mainImg" />
                 </a>
             }
             techs={[<React width="1rem" />]}

@@ -8,6 +8,7 @@ export const CSS: React.FC<IconTypes> = (props: IconTypes) => {
             width={props.width}
             height={props.height}
             fill="none"
+            aria-label="CSS icon"
         >
             <path
                 d="M10.383 126.892L0 0l124 .255-10.979 126.637-50.553 14.638z"
