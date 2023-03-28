@@ -51,6 +51,7 @@ export const Button = (props: ButtonProps) => {
             backgroundColorHover={props.backgroundColorHover}
             link={props.link}
             type={props.type ? props.type : "button"}
+            disabled={props.disabled}
             onClick={props.action}
         >
             {props.text}

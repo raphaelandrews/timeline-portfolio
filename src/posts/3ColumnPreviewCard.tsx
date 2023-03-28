@@ -9,7 +9,7 @@ export const ThreeColumnPreviewCard = () => {
             img={profileImg}
             user="Andrews"
             date="27 mar 2023"
-            emoji="🔨 Working"
+            emoji="⚔️ Feeling challenged"
             content={
                 <>
                     <p className="post__content post__first">3 Column Preview Card challenge 🗡️</p>

@@ -9,7 +9,7 @@ export const InteractiveRating = () => {
             img={profileImg}
             user="Andrews"
             date="26 mar 2023"
-            emoji="🔨 Working"
+            emoji="⚔️ Feeling challenged"
             content={
                 <>
                     <p className="post__content post__first">Interactive Rating challenge 🗡️</p>

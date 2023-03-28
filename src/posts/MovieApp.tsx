@@ -1,7 +1,7 @@
 import { Post } from "@/components";
 import profileImg from "../assets/img/profile.jpeg";
 import mainImg from "../assets/img/movie-app.png";
-import { JS, React, TS } from "@/assets/svg";
+import { React } from "@/assets/svg";
 
 export const MovieApp = () => {
     return (

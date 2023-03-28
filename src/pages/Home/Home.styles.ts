@@ -12,7 +12,7 @@ export const ListWrapper = styled.ul`
         font-size: 1rem;
         color: var(--alt-color);
         text-align: center;
-        width: 25%;
+        width: calc(100% / 3);
         padding: .75rem 0;
         transition: .5s;
 

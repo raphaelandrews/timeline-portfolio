@@ -9,7 +9,7 @@ export const QRcode = () => {
             img={profileImg}
             user="Andrews"
             date="23 mar 2023"
-            emoji="🔨 Working"
+            emoji="⚔️ Feeling challenged"
             content={
                 <>
                     <p className="post__content post__first">QR code component challenge 🗡️</p>

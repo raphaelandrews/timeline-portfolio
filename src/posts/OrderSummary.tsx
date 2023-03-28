@@ -9,7 +9,7 @@ export const OrderSummary = () => {
             img={profileImg}
             user="Andrews"
             date="26 mar 2023"
-            emoji="🔨 Working"
+            emoji="⚔️ Feeling challenged"
             content={
                 <>
                     <p className="post__content post__first">Order Summary challenge 🗡️</p>

@@ -8,3 +8,5 @@ export { HTML } from "./HTML";
 export { CSS } from "./CSS";
 export { JS } from "./JS";
 export { TS} from "./TS";
+export { Previous } from "./Previous";
+export { Next } from "./Next";

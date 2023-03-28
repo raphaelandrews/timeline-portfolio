@@ -10,34 +10,29 @@ export const Home = () => {
     const [isFeed, setIsFeed] = useState(borderActive)
     const [isAbout, setIsAbout] = useState(border)
     const [isContact, setIsContact] = useState(border)
-    const [isProjects, setIsProjects] = useState(border)
 
     const handleFeed = () => {
         setIsFeed(borderActive)
         setIsAbout(border)
         setIsContact(border)
-        setIsProjects(border)
     }
 
     const handleAbout = () => {
         setIsFeed(border)
         setIsAbout(borderActive)
         setIsContact(border)
-        setIsProjects(border)
     }
 
     const handleContact = () => {
         setIsFeed(border)
         setIsAbout(border)
         setIsContact(borderActive)
-        setIsProjects(border)
     }
 
     const handleProjects = () => {
         setIsFeed(border)
         setIsAbout(border)
         setIsContact(border)
-        setIsProjects(borderActive)
     }
 
     return (
@@ -47,7 +42,6 @@ export const Home = () => {
                     <li onClick={handleFeed}><C.ListItem borderBottom={isFeed} >Feed</C.ListItem></li>
                     <li onClick={handleAbout}><C.ListItem borderBottom={isAbout} >About</C.ListItem></li>
                     <li onClick={handleContact}><C.ListItem borderBottom={isContact} >Contact</C.ListItem></li>
-                    <li onClick={handleProjects}><C.ListItem borderBottom={isProjects}>Projects</C.ListItem></li>
                 </C.ListWrapper>
                 <C.Wrapper>
                     <Feed />

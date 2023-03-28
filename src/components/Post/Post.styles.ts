@@ -64,6 +64,7 @@ export const PostDefault = styled.article<PostProps>`
         margin-bottom: 1rem;
 
         a {
+            font-weight: 600;
             color: var(--second-color);
 
             &:hover {
