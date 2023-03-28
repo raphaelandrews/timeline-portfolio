@@ -1,11 +1,14 @@
 import { Post } from "@/components";
 import profileImg from "../assets/img/profile.jpeg";
 import mainImg from "../assets/img/interactive-rating.jpg";
+import { HTML, CSS, JS } from "@/assets/svg";
 
 export const InteractiveRating = () => {
     return (
         <Post
             img={profileImg}
+            user="Andrews"
+            date="26 mar 2023"
             emoji="🔨 Working"
             content={
                 <>
@@ -17,9 +20,10 @@ export const InteractiveRating = () => {
 
             image={
                 <a href="https://raphaelandrews.github.io/Interactive-Rating/" target="_blank">
-                    <img src={mainImg} alt="QR code challenge" className="post__mainImg" />
+                    <img src={mainImg} alt="Interactive Rating" className="post__mainImg" />
                 </a>
             }
+            techs={[<HTML width="1rem" />, <CSS width="1rem" />, <JS width="1rem" />]}
         />
     )
 }

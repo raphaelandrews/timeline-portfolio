@@ -3,3 +3,8 @@ export { Moon } from "./Moon";
 export { Logo } from "./Logo";
 export { Verified } from "./Verified";
 export { Command } from "./Command";
+export { React } from "./React";
+export { HTML } from "./HTML";
+export { CSS } from "./CSS";
+export { JS } from "./JS";
+export { TS} from "./TS";

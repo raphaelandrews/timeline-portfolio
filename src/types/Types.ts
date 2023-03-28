@@ -14,6 +14,7 @@ export type Theme = {
         primary: string;
     };
 };
+
 export type ThemeContextType = {
     theme: Theme;
     toggleTheme: () => void;

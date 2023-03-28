@@ -5,7 +5,7 @@ import { Container } from '@/components';
 import { Feed } from '@/features';
 
 export const Home = () => {
-    const borderActive = "3px solid var(--first-color)"
+    const borderActive = "3px solid var(--second-color)"
     const border = "3px solid transparent"
     const [isFeed, setIsFeed] = useState(borderActive)
     const [isAbout, setIsAbout] = useState(border)

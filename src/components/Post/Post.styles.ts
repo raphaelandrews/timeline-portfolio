@@ -71,6 +71,13 @@ export const PostDefault = styled.article<PostProps>`
             }
         }
     }
+
+    .post__techs {
+        display: flex;
+        gap: .5rem;
+        color: var(--third-color);
+        margin-bottom: 1rem;
+    }
     
     .post__first {
         margin-top: .5rem;

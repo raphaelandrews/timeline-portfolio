@@ -32,5 +32,4 @@ export const ListItem = styled.span<ListItemProps>`
     padding: .5rem .5rem;
     border-top: 2px solid transparent;
     border-bottom: ${(props) => props.borderBottom};
-    transition: .5s;
 `
