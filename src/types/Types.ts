@@ -14,6 +14,7 @@ export type Theme = {
         primary: string;
     };
 };
+
 export type ThemeContextType = {
     theme: Theme;
     toggleTheme: () => void;
@@ -26,6 +27,7 @@ export type IconTypes = {
     left?: string;
     fontSize?: string;
     width?: string;
+    maxWidth?: string;
     height?: string;
     color?: string;
     transform?: string;

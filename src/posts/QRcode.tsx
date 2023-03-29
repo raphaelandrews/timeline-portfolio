@@ -1,12 +1,15 @@
 import { Post } from "@/components";
 import profileImg from "../assets/img/profile.jpeg";
 import mainImg from "../assets/img/qrcode-challenge.jpg";
+import { HTML, CSS } from "@/assets/svg";
 
 export const QRcode = () => {
     return (
         <Post
             img={profileImg}
-            emoji="🔨 Working"
+            user="Andrews"
+            date="23 mar 2023"
+            emoji="⚔️ Feeling challenged"
             content={
                 <>
                     <p className="post__content post__first">QR code component challenge 🗡️</p>
@@ -20,6 +23,7 @@ export const QRcode = () => {
                     <img src={mainImg} alt="QR code challenge" className="post__mainImg" />
                 </a>
             }
+            techs={[<HTML width="1rem" />, <CSS width="1rem" />]}
         />
     )
 }

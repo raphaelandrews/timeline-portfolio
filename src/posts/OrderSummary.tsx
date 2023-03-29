@@ -1,12 +1,15 @@
 import { Post } from "@/components";
 import profileImg from "../assets/img/profile.jpeg";
 import mainImg from "../assets/img/order-summary-challenge.jpg";
+import { HTML, CSS } from "@/assets/svg";
 
 export const OrderSummary = () => {
     return (
         <Post
             img={profileImg}
-            emoji="🔨 Working"
+            user="Andrews"
+            date="26 mar 2023"
+            emoji="⚔️ Feeling challenged"
             content={
                 <>
                     <p className="post__content post__first">Order Summary challenge 🗡️</p>
@@ -17,9 +20,10 @@ export const OrderSummary = () => {
 
             image={
                 <a href="https://raphaelandrews.github.io/Order-Summary/" target="_blank">
-                    <img src={mainImg} alt="QR code challenge" className="post__mainImg" />
+                    <img src={mainImg} alt="Order Summary" className="post__mainImg" />
                 </a>
             }
+            techs={[<HTML width="1rem" />, <CSS width="1rem" />]}
         />
     )
 }

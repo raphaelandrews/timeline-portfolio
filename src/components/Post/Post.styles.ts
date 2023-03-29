@@ -64,11 +64,24 @@ export const PostDefault = styled.article<PostProps>`
         margin-bottom: 1rem;
 
         a {
+            font-weight: 600;
             color: var(--second-color);
 
             &:hover {
                 text-decoration: underline;
             }
+        }
+    }
+
+    .post__techs {
+        display: flex;
+        gap: .5rem;
+        color: var(--third-color);
+        margin-bottom: 1rem;
+
+        span,
+        svg {
+            display: flex;
         }
     }
     
@@ -80,5 +93,6 @@ export const PostDefault = styled.article<PostProps>`
         width: 100%;
         border-radius: .5rem;
         aspect-ratio: 3/2;
+        object-fit: cover;
     }
 `
