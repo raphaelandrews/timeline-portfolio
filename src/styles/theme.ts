@@ -11,7 +11,7 @@ export const lightTheme = {
         background: 'hsl(0, 0%, 100%)',
     },
     fonts: {
-        primary: 'Inter, sans-serif',
+        primary: 'Chillax, sans-serif',
     },
 };
 
@@ -28,6 +28,6 @@ export const darkTheme = {
         background: 'hsl(210, 40%, 2%)',
     },
     fonts: {
-        primary: 'Inter, sans-serif',
+        primary: 'Chillax, sans-serif',
     },
 };

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-interface TitleProps {
+interface SubtitleProps {
     fontSize?: string;
     fontSizeMD?: string;
     fontSizeLG?: string;
@@ -9,7 +9,7 @@ interface TitleProps {
     marginMD?: string;
 }
 
-export const TitleDefault = styled.h1<TitleProps>`
+export const SubtitleDefault = styled.h2<SubtitleProps>`
     font-size: ${(props) => props.fontSize};
     font-weight: ${(props) => props.fontWeight ? props.fontWeight : "600"};
     margin: ${(props) => props.margin ? props.margin : "0"};

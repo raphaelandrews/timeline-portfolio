@@ -10,33 +10,27 @@ export const Home = () => {
     const [isShow, setIsShow] = useState(<Feed />)
     const [isFeed, setIsFeed] = useState(borderActive)
     const [isAbout, setIsAbout] = useState(border)
-    const [isContact, setIsContact] = useState(border)
+    const [isLinks, setIsLinks] = useState(border)
 
     const handleFeed = () => {
         setIsShow(<Feed />)
         setIsFeed(borderActive)
         setIsAbout(border)
-        setIsContact(border)
+        setIsLinks(border)
     }
 
     const handleAbout = () => {
         setIsShow(<About />)
         setIsFeed(border)
         setIsAbout(borderActive)
-        setIsContact(border)
+        setIsLinks(border)
     }
 
-    const handleContact = () => {
+    const handleLinks = () => {
         setIsShow(<Links />)
         setIsFeed(border)
         setIsAbout(border)
-        setIsContact(borderActive)
-    }
-
-    const handleProjects = () => {
-        setIsFeed(border)
-        setIsAbout(border)
-        setIsContact(border)
+        setIsLinks(borderActive)
     }
 
     return (
@@ -45,7 +39,7 @@ export const Home = () => {
                 <C.ListWrapper>
                     <li onClick={handleFeed}><C.ListItem borderBottom={isFeed} >Feed</C.ListItem></li>
                     <li onClick={handleAbout}><C.ListItem borderBottom={isAbout} >About</C.ListItem></li>
-                    <li onClick={handleContact}><C.ListItem borderBottom={isContact} >Contact</C.ListItem></li>
+                    <li onClick={handleLinks}><C.ListItem borderBottom={isLinks} >Links</C.ListItem></li>
                 </C.ListWrapper>
                 <C.Wrapper>
                     {isShow}

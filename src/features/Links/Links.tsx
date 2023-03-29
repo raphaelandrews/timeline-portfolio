@@ -12,7 +12,7 @@ export const Links = () => {
         <Gmail height="80%" />
         <ExternalLink width="1.25rem" color="#000" />
       </C.Link>
-      <C.Link href="mailto:raphaelandrews95@gmail.com" target="_blank" backgroundColor="hsl(210, 90%, 40%)">
+      <C.Link href="https://www.linkedin.com/in/raphael-andrews/" target="_blank" backgroundColor="hsl(210, 90%, 40%)">
         <LinkedIn height="80%" />
         <ExternalLink width="1.25rem" color="#fff" />
       </C.Link>
