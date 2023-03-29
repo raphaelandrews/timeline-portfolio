@@ -8,7 +8,7 @@ export const Nav = () => {
     return (
         <NavWrapper>
             <Link to="/">
-                <Logo width="2rem" height="2rem" />
+                <Logo width="2rem" height="2rem" color="var(--first-color)" />
             </Link>
             <Button
                 padding=".5rem"

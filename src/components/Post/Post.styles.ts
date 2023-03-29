@@ -52,7 +52,7 @@ export const PostDefault = styled.article<PostProps>`
     .post__emoji {
         display: inline-block;
         font-size: .75rem;
-        font-weight: 600;
+        font-weight: 500;
         padding: .25rem .75rem;
         margin-top: .25rem;
         border-radius: 100px;
