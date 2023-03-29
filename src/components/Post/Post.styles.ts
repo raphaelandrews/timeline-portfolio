@@ -78,6 +78,11 @@ export const PostDefault = styled.article<PostProps>`
         gap: .5rem;
         color: var(--third-color);
         margin-bottom: 1rem;
+
+        span,
+        svg {
+            display: flex;
+        }
     }
     
     .post__first {

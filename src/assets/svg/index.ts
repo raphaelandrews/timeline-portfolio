@@ -16,3 +16,7 @@ export { Koa } from "./Koa";
 export { Node } from "./Node";
 export { Prisma } from "./Prisma";
 export { PlanetScale } from "./PlanetScale"; 
+export { Github } from "./Github";
+export { ExternalLink } from "./ExternalLink";
+export { Gmail } from "./Gmail";
+export { LinkedIn } from "./LinkedIn";

@@ -39,7 +39,8 @@ export const InputWrapper = styled.div`
 
 export const Input = styled.input`
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: .875rem;
+    font-weight: 600;
     text-align: center;
     padding: .25rem .5rem;
     width: 2rem;

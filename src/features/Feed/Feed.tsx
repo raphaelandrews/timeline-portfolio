@@ -14,7 +14,7 @@ export const Feed = () => {
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-
+  
   const itemsToRender = [
     <Bookstore key="bookstore" />,
     <EcommerceProductPage key="ecommerce-product-page" />,

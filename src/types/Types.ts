@@ -27,6 +27,7 @@ export type IconTypes = {
     left?: string;
     fontSize?: string;
     width?: string;
+    maxWidth?: string;
     height?: string;
     color?: string;
     transform?: string;

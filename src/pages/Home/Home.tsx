@@ -2,28 +2,32 @@ import { useState } from 'react';
 
 import * as C from './Home.styles';
 import { Container } from '@/components';
-import { Feed } from '@/features';
+import { About, Links, Feed } from '@/features';
 
 export const Home = () => {
-    const borderActive = "3px solid var(--second-color)"
-    const border = "3px solid transparent"
+    const borderActive = "3px solid var(--second-color)";
+    const border = "3px solid transparent";
+    const [isShow, setIsShow] = useState(<Feed />)
     const [isFeed, setIsFeed] = useState(borderActive)
     const [isAbout, setIsAbout] = useState(border)
     const [isContact, setIsContact] = useState(border)
 
     const handleFeed = () => {
+        setIsShow(<Feed />)
         setIsFeed(borderActive)
         setIsAbout(border)
         setIsContact(border)
     }
 
     const handleAbout = () => {
+        setIsShow(<About />)
         setIsFeed(border)
         setIsAbout(borderActive)
         setIsContact(border)
     }
 
     const handleContact = () => {
+        setIsShow(<Links />)
         setIsFeed(border)
         setIsAbout(border)
         setIsContact(borderActive)
@@ -44,7 +48,7 @@ export const Home = () => {
                     <li onClick={handleContact}><C.ListItem borderBottom={isContact} >Contact</C.ListItem></li>
                 </C.ListWrapper>
                 <C.Wrapper>
-                    <Feed />
+                    {isShow}
                 </C.Wrapper>
             </>
         </Container>

@@ -15,7 +15,7 @@ export const Bookstore = () => {
                     <p className="post__content post__first">Bookstore 📖</p>
                     <p className="post__content">This project was built for the Final Project of the Gama Experience #46, a six-month bootcamp in which I participated.</p>
                     <p className="post__content">It's an e-commerce platform with authentication, cart, admin panel and other essential e-commerce functionalities.</p>
-                    <p className="post__content">For the frontend, I used React, TypeScript, and Styled Components. For the backend, I used Koa.js, Prisma, and PlanetScale. The project is deployed on Vercel.</p>
+                    <p className="post__content">For the frontend, I used React, TypeScript and Styled Components. For the backend, I used Koa.js, Prisma and PlanetScale. The project is deployed on Vercel.</p>
                     <p className="post__content"><a href="https://gamaxp-final-project-web.vercel.app" target="_blank">Demo</a></p>
                 </>
             }
