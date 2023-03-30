@@ -12,105 +12,22 @@ interface ThemePickerProps {
 }
 
 export const ThemePicker = (props: ThemePickerProps) => {
-    const { toggleSetTheme, toggleThemePicker } = useContext(ThemeContext);
+    const { toggleSetTheme, toggleThemePicker, isThemePicker } = useContext(ThemeContext);
 
     return (
         <Container width='100%' maxWidth='780px'>
             <ThemePickerContainer>
-                <ThemePickerDefault>
+                <ThemePickerDefault isThemePicker={isThemePicker}>
                     <Button
-                    action={toggleThemePicker}
-                    className="close"
-                    display="flex"
-                    border="none"
-                    backgroundColor="transparent"
+                        action={toggleThemePicker}
+                        className="close"
+                        display="flex"
+                        border="none"
+                        backgroundColor="transparent"
                     >
                         <Close width="1.25rem" />
                     </Button>
-                    <Button
-                        action={() => toggleSetTheme("light")}
-                        minWidth="136px"
-                        padding="1rem"
-                        border={`2px solid ${lightTheme.colors.primary}`}
-                        borderRadius=".5rem"
-                        backgroundColor={lightTheme.colors.background}>
-                        <Span
-                            fontFamily={lightTheme.fonts.primary}
-                            fontSize="var(--fs-5)"
-                            color={lightTheme.colors.primary}
-                        >
-                            Light
-                        </Span>
-
-                        <Span padding=".25rem 0 0">
-                            <Span
-                                display="inline-block"
-                                textAlign="left"
-                                textIndent="100%"
-                                whiteSpace="nowrap"
-                                width="1.25rem"
-                                height="1.25rem"
-                                borderRadius="50%"
-                                backgroundColor={lightTheme.colors.primary}
-                                boxShadow={`0 0 0 2px ${lightTheme.colors.background}`}
-                                verticalAlign="bottom"
-                                overflow="hidden"
-                            />
-                            <Span
-                                display="inline-block"
-                                textAlign="left"
-                                textIndent="100%"
-                                whiteSpace="nowrap"
-                                width="1.25rem"
-                                height="1.25rem"
-                                borderRadius="50%"
-                                backgroundColor={lightTheme.colors.secondary}
-                                boxShadow={`0 0 0 2px ${lightTheme.colors.background}`}
-                                verticalAlign="bottom"
-                                overflow="hidden"
-                            />
-                            <Span
-                                display="inline-block"
-                                textAlign="left"
-                                textIndent="100%"
-                                whiteSpace="nowrap"
-                                width="1.25rem"
-                                height="1.25rem"
-                                borderRadius="50%"
-                                backgroundColor={lightTheme.colors.alternative}
-                                boxShadow={`0 0 0 2px ${lightTheme.colors.background}`}
-                                verticalAlign="bottom"
-                                overflow="hidden"
-                            />
-                            <Span
-                                display="inline-block"
-                                textAlign="left"
-                                textIndent="100%"
-                                whiteSpace="nowrap"
-                                width="1.25rem"
-                                height="1.25rem"
-                                borderRadius="50%"
-                                backgroundColor={lightTheme.colors.quaternary}
-                                boxShadow={`0 0 0 2px ${lightTheme.colors.background}`}
-                                verticalAlign="bottom"
-                                overflow="hidden"
-                            />
-                            <Span
-                                display="inline-block"
-                                textAlign="left"
-                                textIndent="100%"
-                                whiteSpace="nowrap"
-                                width="1.25rem"
-                                height="1.25rem"
-                                borderRadius="50%"
-                                backgroundColor={lightTheme.colors.backgroundAlt}
-                                boxShadow={`0 0 0 2px ${lightTheme.colors.background}`}
-                                verticalAlign="bottom"
-                                overflow="hidden"
-                            />
-                        </Span>
-                    </Button>
-                    <Button
+                    <Button className="btns"
                         action={() => toggleSetTheme("dark")}
                         minWidth="136px"
                         padding="1rem"
@@ -193,6 +110,89 @@ export const ThemePicker = (props: ThemePickerProps) => {
                             />
                         </Span>
                     </Button>
+                    <Button className="btns"
+                        action={() => toggleSetTheme("light")}
+                        minWidth="136px"
+                        padding="1rem"
+                        border={`2px solid ${lightTheme.colors.primary}`}
+                        borderRadius=".5rem"
+                        backgroundColor={lightTheme.colors.background}>
+                        <Span
+                            fontFamily={lightTheme.fonts.primary}
+                            fontSize="var(--fs-5)"
+                            color={lightTheme.colors.primary}
+                        >
+                            Light
+                        </Span>
+
+                        <Span padding=".25rem 0 0">
+                            <Span
+                                display="inline-block"
+                                textAlign="left"
+                                textIndent="100%"
+                                whiteSpace="nowrap"
+                                width="1.25rem"
+                                height="1.25rem"
+                                borderRadius="50%"
+                                backgroundColor={lightTheme.colors.primary}
+                                boxShadow={`0 0 0 2px ${lightTheme.colors.background}`}
+                                verticalAlign="bottom"
+                                overflow="hidden"
+                            />
+                            <Span
+                                display="inline-block"
+                                textAlign="left"
+                                textIndent="100%"
+                                whiteSpace="nowrap"
+                                width="1.25rem"
+                                height="1.25rem"
+                                borderRadius="50%"
+                                backgroundColor={lightTheme.colors.secondary}
+                                boxShadow={`0 0 0 2px ${lightTheme.colors.background}`}
+                                verticalAlign="bottom"
+                                overflow="hidden"
+                            />
+                            <Span
+                                display="inline-block"
+                                textAlign="left"
+                                textIndent="100%"
+                                whiteSpace="nowrap"
+                                width="1.25rem"
+                                height="1.25rem"
+                                borderRadius="50%"
+                                backgroundColor={lightTheme.colors.alternative}
+                                boxShadow={`0 0 0 2px ${lightTheme.colors.background}`}
+                                verticalAlign="bottom"
+                                overflow="hidden"
+                            />
+                            <Span
+                                display="inline-block"
+                                textAlign="left"
+                                textIndent="100%"
+                                whiteSpace="nowrap"
+                                width="1.25rem"
+                                height="1.25rem"
+                                borderRadius="50%"
+                                backgroundColor={lightTheme.colors.quaternary}
+                                boxShadow={`0 0 0 2px ${lightTheme.colors.background}`}
+                                verticalAlign="bottom"
+                                overflow="hidden"
+                            />
+                            <Span
+                                display="inline-block"
+                                textAlign="left"
+                                textIndent="100%"
+                                whiteSpace="nowrap"
+                                width="1.25rem"
+                                height="1.25rem"
+                                borderRadius="50%"
+                                backgroundColor={lightTheme.colors.backgroundAlt}
+                                boxShadow={`0 0 0 2px ${lightTheme.colors.background}`}
+                                verticalAlign="bottom"
+                                overflow="hidden"
+                            />
+                        </Span>
+                    </Button>       
                 </ThemePickerDefault>
             </ThemePickerContainer>
         </Container>

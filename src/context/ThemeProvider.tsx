@@ -44,7 +44,7 @@ export function ThemeContextProvider({ children }: ThemeProviderProps) {
     } else if (theme === "light") {
       return lightTheme;
     }
-    return theme === "corinthians" ? darkTheme : lightTheme;
+    return theme === "corinthians" ? lightTheme : darkTheme;
   }
 
   const contextValue = {

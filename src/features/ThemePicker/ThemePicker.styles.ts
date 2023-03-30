@@ -2,12 +2,17 @@ import styled from "styled-components";
 
 interface ThemePickerProps {
     height?: string;
+    isThemePicker: boolean;
 }
 
 export const ThemePickerContainer = styled.section`
     width: 100%;
     padding-top: 4rem;
-    margin-bottom: -2rem;
+    margin-bottom: -4rem;
+
+    @media (min-width: 600px) { 
+        margin-bottom: -2rem;
+    }
 `
 
 export const ThemePickerDefault = styled.div<ThemePickerProps>`
@@ -17,18 +22,33 @@ export const ThemePickerDefault = styled.div<ThemePickerProps>`
     align-items: center;
     gap: 1rem;
     max-width: 1400px;
-    //height: 10rem;
-    padding: 2rem;
+    max-height: ${(props) => props.isThemePicker ? "200px" : "0"};
+    padding: 0;
     margin: 0 auto;
-    border-radius: 2rem;
     background-color: var(--bg-alt-color);
     overflow: hidden;
-    transition: 10rem .4s cubic-bezier(.4, 0, .2, 1);
+    transition: max-height .5s ease-in-out;
+
+    .btns {
+        margin: ${(props) => props.isThemePicker ? "2rem 0" : "0"};
+    }
     
     .close {
         position: absolute;
-        top: 1rem;
-        right: 1rem;
+        top: .5rem;
+        right: .5rem;
+    }
+
+    @media (min-width: 450px) { 
+        .close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+    }
+
+    @media (min-width: 600px) { 
+        border-radius: .5rem;
     }
 
     &::-webkit-scrollbar {
