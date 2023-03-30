@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
 export const NavWrapper = styled.nav`
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    width: 100%;
+    padding: .75rem 1.25rem;
+    //background-color: hsla(210, 40%, 2%, .8);
+    backdrop-filter: blur(8px);
     box-shadow: var(--bs-1);
     z-index: 1;
 
@@ -26,9 +29,5 @@ export const NavWrapper = styled.nav`
 
     @media (min-width: 600px) {  
         box-shadow: none;
-    }
-
-    @media (min-width: 1000px) {
-        padding: 1.5rem;
     }
 `

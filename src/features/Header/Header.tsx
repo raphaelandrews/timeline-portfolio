@@ -10,7 +10,7 @@ import profileImg from "../../assets/img/profile.jpeg";
 
 export const Header = () => {
   return (
-    <header>
+    <C.Header>
       <Container width='100%' maxWidth='780px'>
         <>
           <C.Background src={bg} alt="Profile Wallpaper" />
@@ -29,6 +29,6 @@ export const Header = () => {
           </C.Wrapper>
           </>
       </Container>
-    </header>
+    </C.Header>
   )
 }
