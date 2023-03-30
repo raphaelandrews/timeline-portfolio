@@ -49,6 +49,7 @@ export function ThemeContextProvider({ children }: ThemeProviderProps) {
 
   const contextValue = {
     isSetTheme,
+    isThemePicker,
     toggleSetTheme,
     toggleThemePicker,
   };

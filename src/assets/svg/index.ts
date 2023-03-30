@@ -20,3 +20,4 @@ export { Github } from "./Github";
 export { ExternalLink } from "./ExternalLink";
 export { Gmail } from "./Gmail";
 export { LinkedIn } from "./LinkedIn";
+export { Close } from "./Close";

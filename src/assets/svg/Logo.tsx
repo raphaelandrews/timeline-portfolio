@@ -14,7 +14,7 @@ export const Logo: React.FC<IconTypes> = (props: IconTypes) => {
                 fillRule="evenodd"
                 clipRule="evenodd"
                 d="M354.742 34L62 326.742L354.742 619.484L647.484 326.742L354.742 34ZM354.871 147L175 326.871L354.871 506.742L534.742 326.871L354.871 147Z"
-                fill="var(--first-color)"
+                fill={props.color}
             />
             <path d="M61.8113 61.8113L208.058 100.998L100.998 208.058L61.8113 61.8113Z" fill="var(--first-color)" />
             <path d="M641.434 61.8113L602.247 208.058L495.187 100.998L641.434 61.8113Z" fill="var(--first-color)" />

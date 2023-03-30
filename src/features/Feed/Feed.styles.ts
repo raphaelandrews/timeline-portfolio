@@ -46,7 +46,7 @@ export const Input = styled.input`
     width: 2rem;
     border: none;
     border-radius: .25rem;
-    background-color: var(--first-color);
+    background-color: var(--fifth-color);
 
     &:focus {
         outline: none;

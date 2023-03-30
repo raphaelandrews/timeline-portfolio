@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Header = styled.header`
+    padding-top: 4rem;
+`
+
 export const Wrapper = styled.div`
     padding: 0 2rem;
 

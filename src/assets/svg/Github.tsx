@@ -11,7 +11,7 @@ export const Github: React.FC<IconTypes> = (props: IconTypes) => {
             viewBox="0 0 614 164"
             width={props.width}
             height={props.height}
-            fill="var(--first-color)"
+            fill="#fff"
             >
             <path d="M374.4,122.2h-0.2c0.1,0,0.1,0.1,0.2,0.1h0.1L374.4,122.2z M374.4,122.3c-0.8,0-2.9,0.4-5.1,0.4
                 c-6.9,0-9.3-3.2-9.3-7.4V87.5h14.1c0.8,0,1.4-0.7,1.4-1.7V70.7c0-0.8-0.7-1.5-1.4-1.5H360V50.4c0-0.7-0.5-1.1-1.3-1.1h-19.2

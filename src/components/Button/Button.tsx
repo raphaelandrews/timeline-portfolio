@@ -26,6 +26,7 @@ interface ButtonProps {
     disabled?: boolean;
     action?: () => void;
     children?: ReactNode;
+    className?: string;
 }
 
 export const Button = (props: ButtonProps) => {
@@ -53,6 +54,7 @@ export const Button = (props: ButtonProps) => {
             type={props.type ? props.type : "button"}
             disabled={props.disabled}
             onClick={props.action}
+            className={props.className}
         >
             {props.text}
             {props.children}

@@ -41,6 +41,7 @@ export const GlobalStyles = createGlobalStyle`
     --third-color: ${({ theme }) => theme.colors.tertiary};
     --third-color-alt: ${({ theme }) => theme.colors.tertiaryAlt};
     --fourth-color: ${({ theme }) => theme.colors.quaternary};
+    --fifth-color: ${({ theme }) => theme.colors.quinary};
     --alt-color: ${({ theme }) => theme.colors.alternative};
     --bg-alt-color: ${({ theme }) => theme.colors.backgroundAlt};
     --bg-color: ${({ theme }) => theme.colors.background};
