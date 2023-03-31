@@ -25,8 +25,7 @@ export const InputWrapper = styled.div`
     align-items: center;
     gap: .75rem;
 
-    @media (min-width: 600px) {
-       
+    @media (min-width: 600px) { 
         right: 1rem;
     }
 

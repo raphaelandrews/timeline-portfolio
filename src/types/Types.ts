@@ -6,6 +6,7 @@ export type Theme = {
         tertiary: string;
         tertiaryAlt: string;
         quaternary: string;
+        quinary: string;
         alternative: string;
         backgroundAlt: string;
         background: string;

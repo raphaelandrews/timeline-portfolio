@@ -2,7 +2,7 @@ import { createContext } from "react";
 
 type ThemeContextType = {
   isSetTheme: string;
-  isThemePicker: boolean
+  isThemePicker: boolean;
   toggleSetTheme: (e: string) => void;
   toggleThemePicker: () => void;
 };

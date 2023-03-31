@@ -18,6 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 100%;
     min-height: 100vh;
     background: var(--bg-color);
+    padding-top: 4rem;
   }
 
   main {

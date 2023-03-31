@@ -2,7 +2,7 @@
 import { useEffect, useState, ReactNode } from "react";
 import { ThemeProvider } from "../styles/ThemeProvider";
 import { ThemeContext } from "./ThemeContext";
-import { lightTheme, darkTheme } from "../styles/theme";
+import { lightTheme, darkTheme, cyberpunkTheme } from "../styles/theme";
 import { GlobalStyles } from "../styles/GlobalStyles";
 import { Theme } from "../types/Types";
 
@@ -43,8 +43,10 @@ export function ThemeContextProvider({ children }: ThemeProviderProps) {
       return darkTheme;
     } else if (theme === "light") {
       return lightTheme;
+    } else if (theme === "cyberpunk") {
+      return cyberpunkTheme;
     }
-    return theme === "corinthians" ? darkTheme : lightTheme;
+    return theme === "corinthians" ? lightTheme : cyberpunkTheme;
   }
 
   const contextValue = {
