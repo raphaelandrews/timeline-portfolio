@@ -7,12 +7,6 @@ interface ThemePickerProps {
 
 export const ThemePickerContainer = styled.section`
     width: 100%;
-    padding-top: 4rem;
-    margin-bottom: -4rem;
-
-    @media (min-width: 600px) { 
-        margin-bottom: -2rem;
-    }
 `
 
 export const ThemePickerDefault = styled.div<ThemePickerProps>`
@@ -23,8 +17,6 @@ export const ThemePickerDefault = styled.div<ThemePickerProps>`
     gap: 1rem;
     max-width: 1400px;
     max-height: ${(props) => props.isThemePicker ? "200px" : "0"};
-    padding: 0;
-    margin: 0 auto;
     background-color: var(--bg-alt-color);
     overflow: hidden;
     transition: max-height .5s ease-in-out;
@@ -48,6 +40,7 @@ export const ThemePickerDefault = styled.div<ThemePickerProps>`
     }
 
     @media (min-width: 600px) { 
+        margin :${(props) => props.isThemePicker ? "0 auto 2rem" : "0 auto"};
         border-radius: .5rem;
     }
 

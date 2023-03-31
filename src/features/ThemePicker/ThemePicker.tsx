@@ -3,7 +3,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 
 import { Span, ThemePickerContainer, ThemePickerDefault } from "./ThemePicker.styles";
 import { Button, Container } from "@/components";
-import { lightTheme, darkTheme } from "@/styles/theme";
+import { lightTheme, darkTheme, cyberpunkTheme } from "@/styles/theme";
 import { Close } from "@/assets/svg";
 
 interface ThemePickerProps {
@@ -26,6 +26,89 @@ export const ThemePicker = (props: ThemePickerProps) => {
                         backgroundColor="transparent"
                     >
                         <Close width="1.25rem" />
+                    </Button>
+                    <Button className="btns"
+                        action={() => toggleSetTheme("cyberpunk")}
+                        minWidth="136px"
+                        padding="1rem"
+                        border={`2px solid ${lightTheme.colors.primary}`}
+                        borderRadius=".5rem"
+                        backgroundColor={cyberpunkTheme.colors.background}>
+                        <Span
+                            fontFamily={cyberpunkTheme.fonts.primary}
+                            fontSize="var(--fs-5)"
+                            color={cyberpunkTheme.colors.primary}
+                        >
+                            Cyberpunk
+                        </Span>
+
+                        <Span padding=".25rem 0 0">
+                            <Span
+                                display="inline-block"
+                                textAlign="left"
+                                textIndent="100%"
+                                whiteSpace="nowrap"
+                                width="1.25rem"
+                                height="1.25rem"
+                                borderRadius="50%"
+                                backgroundColor={cyberpunkTheme.colors.primary}
+                                boxShadow={`0 0 0 2px ${cyberpunkTheme.colors.background}`}
+                                verticalAlign="bottom"
+                                overflow="hidden"
+                            />
+                            <Span
+                                display="inline-block"
+                                textAlign="left"
+                                textIndent="100%"
+                                whiteSpace="nowrap"
+                                width="1.25rem"
+                                height="1.25rem"
+                                borderRadius="50%"
+                                backgroundColor={cyberpunkTheme.colors.secondary}
+                                boxShadow={`0 0 0 2px ${cyberpunkTheme.colors.background}`}
+                                verticalAlign="bottom"
+                                overflow="hidden"
+                            />
+                            <Span
+                                display="inline-block"
+                                textAlign="left"
+                                textIndent="100%"
+                                whiteSpace="nowrap"
+                                width="1.25rem"
+                                height="1.25rem"
+                                borderRadius="50%"
+                                backgroundColor={cyberpunkTheme.colors.alternative}
+                                boxShadow={`0 0 0 2px ${cyberpunkTheme.colors.background}`}
+                                verticalAlign="bottom"
+                                overflow="hidden"
+                            />
+                            <Span
+                                display="inline-block"
+                                textAlign="left"
+                                textIndent="100%"
+                                whiteSpace="nowrap"
+                                width="1.25rem"
+                                height="1.25rem"
+                                borderRadius="50%"
+                                backgroundColor={cyberpunkTheme.colors.quaternary}
+                                boxShadow={`0 0 0 2px ${cyberpunkTheme.colors.background}`}
+                                verticalAlign="bottom"
+                                overflow="hidden"
+                            />
+                            <Span
+                                display="inline-block"
+                                textAlign="left"
+                                textIndent="100%"
+                                whiteSpace="nowrap"
+                                width="1.25rem"
+                                height="1.25rem"
+                                borderRadius="50%"
+                                backgroundColor={cyberpunkTheme.colors.backgroundAlt}
+                                boxShadow={`0 0 0 2px ${cyberpunkTheme.colors.background}`}
+                                verticalAlign="bottom"
+                                overflow="hidden"
+                            />
+                        </Span>
                     </Button>
                     <Button className="btns"
                         action={() => toggleSetTheme("dark")}
@@ -192,7 +275,7 @@ export const ThemePicker = (props: ThemePickerProps) => {
                                 overflow="hidden"
                             />
                         </Span>
-                    </Button>       
+                    </Button>
                 </ThemePickerDefault>
             </ThemePickerContainer>
         </Container>
