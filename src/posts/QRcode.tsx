@@ -1,6 +1,6 @@
 import { Post } from "@/components";
-import profileImg from "../assets/img/profile.jpeg";
-import mainImg from "../assets/img/qrcode-challenge.webp";
+import profileImg from "../assets/img/profile-resized.webp";
+import mainImg from "../assets/img/qrcode-challenge-resized.webp";
 import { HTML, CSS } from "@/assets/svg";
 
 export const QRcode = () => {
