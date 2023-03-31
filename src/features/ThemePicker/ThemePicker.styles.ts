@@ -11,11 +11,6 @@ export const ThemePickerContainer = styled.section`
 
 export const ThemePickerDefault = styled.div<ThemePickerProps>`
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    max-width: 1400px;
     max-height: ${(props) => props.isThemePicker ? "200px" : "0"};
     background-color: var(--bg-alt-color);
     overflow: hidden;
@@ -31,7 +26,7 @@ export const ThemePickerDefault = styled.div<ThemePickerProps>`
         right: .5rem;
     }
 
-    @media (min-width: 450px) { 
+    @media (min-width: 500px) { 
         .close {
             position: absolute;
             top: 1rem;
@@ -42,6 +37,20 @@ export const ThemePickerDefault = styled.div<ThemePickerProps>`
     @media (min-width: 600px) { 
         margin :${(props) => props.isThemePicker ? "0 auto 2rem" : "0 auto"};
         border-radius: .5rem;
+    }
+`
+
+export const Btns = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    overflow: scroll hidden;
+
+    @media (min-width: 500px) { 
+        justify-content: center;
+        overflow: hidden;
     }
 
     &::-webkit-scrollbar {
