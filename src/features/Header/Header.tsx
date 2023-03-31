@@ -4,8 +4,8 @@ import * as C from './Header.styles';
 import { Container, Title } from '@/components';
 import { Verified } from '@/assets/svg';
 
-import bg from "../../assets/img/retrowave-sunset.webp";
-import profileImg from "../../assets/img/profile.jpeg";
+import bg from "../../assets/img/retrowave-sunset-resized.webp";
+import profileImg from "../../assets/img/profile-resized.webp";
 
 
 export const Header = () => {
