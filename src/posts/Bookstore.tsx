@@ -26,14 +26,14 @@ export const Bookstore = () => {
                 </a>
             }
             techs={[
-                <React width="1rem" />,
-                <TypeScript width="1rem" />,
-                <StyledComponents width="1rem" />,
-                <Koa width="1rem" />,
-                <Node width="1rem" />,
-                <Prisma width="1rem" />,
-                <PlanetScale width="1rem" />,
-                <Vercel width="1rem" />
+                <React/>,
+                <TypeScript/>,
+                <StyledComponents/>,
+                <Koa/>,
+                <Node/>,
+                <Prisma/>,
+                <PlanetScale/>,
+                <Vercel/>
             ]}
         />
     )

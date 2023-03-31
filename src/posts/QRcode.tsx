@@ -23,7 +23,7 @@ export const QRcode = () => {
                     <img src={mainImg} alt="QR code challenge" className="post__mainImg" />
                 </a>
             }
-            techs={[<HTML width="1rem" />, <CSS width="1rem" />]}
+            techs={[<HTML/>, <CSS/>]}
         />
     )
 }

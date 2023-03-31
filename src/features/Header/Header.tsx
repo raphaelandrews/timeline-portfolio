@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <C.Header>
       <Helmet>
-        <link rel="preload" as="image" href="/assets/retrowave-sunset-resized-8bcac5ff.webp" />
+      <link rel="preload" as="image" href="/assets/retrowave-sunset-resized-8bcac5ff.webp" />
       </Helmet>
       <Container width='100%' maxWidth='780px'>
         <>
@@ -21,7 +21,7 @@ export const Header = () => {
               <C.Profile src={profileImg} alt="Raphael Andrews" />
               <C.Bio>
                 <C.TitleWrapper>
-                  <Title text='Raphael Andrews' fontSize='1.5rem' fontSizeLG='2rem' />
+                  <Title text='Raphael Andrews' fontSize='var(--font-size-1)' />
                   <Verified width='1.25rem' height='1.25rem' />
                 </C.TitleWrapper>
               </C.Bio>

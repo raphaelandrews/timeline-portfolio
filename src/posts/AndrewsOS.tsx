@@ -25,7 +25,7 @@ export const AndrewsOS = () => {
                     <img src={mainImg} alt="AndrewOS Preview" className="post__mainImg" />
                 </a>
             }
-            techs={[<React width="1rem" />, <Vercel width="1rem"/>]}
+            techs={[<React/>, <Vercel/>]}
         />
     )
 }

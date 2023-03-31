@@ -60,16 +60,16 @@ export const Profile = styled.img`
 `
 
 export const BioWrapper = styled.div`
-    @media (min-width: 460px) {
+    @media (min-width: 480px) {
         display: flex;
     }
 `
 
 export const Bio = styled.div`
-    margin: .75rem 0 0;
+    margin: .25rem 0 0;
 
-    @media (min-width: 600px) {
-        margin: .75rem 0 0 .75rem;
+    @media (min-width: 480px) {
+        margin: .25rem 0 0 .75rem;
     }
 `
 
@@ -80,14 +80,13 @@ interface TextProps {
 }
 
 export const Text = styled.p<TextProps>`
-    font-size: .875rem;
+    font-size: var(--font-size-2);
     font-weight:  ${(props) => props.fontWeight};
     color: var(--alt-color);
     margin: ${(props) => props.margin};
     line-height: 1.5em;
 
     @media (min-width: 600px) {
-        font-size: 1rem;
         margin: ${(props) => props.marginMD};
         line-height: inherit;
     }
