@@ -1,6 +1,6 @@
 import { Post } from "@/components";
 import profileImg from "../assets/img/profile.jpeg";
-import mainImg from "../assets/img/stats-preview-card.jpg";
+import mainImg from "../assets/img/stats-preview-card.webp";
 import { HTML, CSS } from "@/assets/svg";
 
 export const StatsPreviewCard = () => {

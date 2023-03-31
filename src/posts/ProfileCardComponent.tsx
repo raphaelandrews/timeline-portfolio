@@ -1,6 +1,6 @@
 import { Post } from "@/components";
 import profileImg from "../assets/img/profile.jpeg";
-import mainImg from "../assets/img/profile-card-component.jpg";
+import mainImg from "../assets/img/profile-card-component.webp";
 import { HTML, CSS, JavaScript } from "@/assets/svg";
 
 

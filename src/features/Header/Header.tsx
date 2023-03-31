@@ -4,7 +4,7 @@ import * as C from './Header.styles';
 import { Container, Title } from '@/components';
 import { Verified } from '@/assets/svg';
 
-import bg from "../../assets/img/retrowave-sunset.png";
+import bg from "../../assets/img/retrowave-sunset.webp";
 import profileImg from "../../assets/img/profile.jpeg";
 
 

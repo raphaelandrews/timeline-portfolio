@@ -41,7 +41,7 @@ export const cyberpunkTheme = {
         secondaryAlt: 'hsl(34, 88%, 44%)',
         tertiary: 'hsl(355, 91%, 66%)',
         tertiaryAlt: 'hsl(355, 91%, 60%)',
-        quaternary: 'hsl(240, 100%, 20%)',
+        quaternary: 'hsl(240, 100%, 13%)',
         quinary: 'hsl(0, 0%, 100%)',
         alternative: 'hsl(240, 7%, 78%)',
         backgroundAlt: 'hsl(240, 100%, 5%)',

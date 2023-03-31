@@ -7,10 +7,9 @@ export const NavWrapper = styled.nav`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: .75rem 1.25rem;
+    padding: .75rem .75rem .75rem 1.25rem;
     //background-color: hsla(210, 40%, 2%, .8);
     backdrop-filter: blur(8px);
-    box-shadow: var(--bs-1);
     z-index: 1;
 
     a {
@@ -26,9 +25,5 @@ export const NavWrapper = styled.nav`
         svg {
             display: flex;
         }
-    }
-
-    @media (min-width: 600px) {  
-        box-shadow: none;
     }
 `

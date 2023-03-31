@@ -27,6 +27,7 @@ interface ButtonProps {
     action?: () => void;
     children?: ReactNode;
     className?: string;
+    ariaLabel?: string;
 }
 
 export const Button = (props: ButtonProps) => {
@@ -55,6 +56,7 @@ export const Button = (props: ButtonProps) => {
             disabled={props.disabled}
             onClick={props.action}
             className={props.className}
+            aria-label={props.ariaLabel}
         >
             {props.text}
             {props.children}

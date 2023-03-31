@@ -1,6 +1,6 @@
 import { Post } from "@/components";
 import profileImg from "../assets/img/profile.jpeg";
-import mainImg from "../assets/img/movie-app.png";
+import mainImg from "../assets/img/movie-app.webp";
 import { React } from "@/assets/svg";
 
 export const MovieApp = () => {

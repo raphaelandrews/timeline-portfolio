@@ -1,6 +1,6 @@
 import { Post } from "@/components";
 import profileImg from "../assets/img/profile.jpeg";
-import mainImg from "../assets/img/order-summary-challenge.jpg";
+import mainImg from "../assets/img/order-summary-challenge.webp";
 import { HTML, CSS } from "@/assets/svg";
 
 export const OrderSummary = () => {

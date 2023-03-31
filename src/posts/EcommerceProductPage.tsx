@@ -1,7 +1,7 @@
 import { Post } from "@/components";
 import { HTML, CSS } from "@/assets/svg";
 import profileImg from "../assets/img/profile.jpeg";
-import mainImg from "../assets/img/ecommerce-product-page.jpg";
+import mainImg from "../assets/img/ecommerce-product-page.webp";
 
 export const EcommerceProductPage = () => {
     return (

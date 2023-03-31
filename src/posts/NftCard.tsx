@@ -1,6 +1,6 @@
 import { Post } from "@/components";
 import profileImg from "../assets/img/profile.jpeg";
-import mainImg from "../assets/img/nft-card.jpg";
+import mainImg from "../assets/img/nft-card.webp";
 import { HTML, CSS } from "@/assets/svg";
 
 export const NftCard = () => {
