@@ -24,6 +24,7 @@ export const ThemePicker = (props: ThemePickerProps) => {
                         display="flex"
                         border="none"
                         backgroundColor="transparent"
+                        ariaLabel="Close theme picker"
                     >
                         <Close width="1.25rem" />
                     </Button>

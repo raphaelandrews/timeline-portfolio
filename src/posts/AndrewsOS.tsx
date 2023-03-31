@@ -1,7 +1,7 @@
 import { Post } from "@/components";
 import { React, Vercel } from "@/assets/svg";
 import profileImg from "../assets/img/profile.jpeg";
-import mainImg from "../assets/img/andrews-os.png";
+import mainImg from "../assets/img/andrews-os.webp";
 
 export const AndrewsOS = () => {
     return (

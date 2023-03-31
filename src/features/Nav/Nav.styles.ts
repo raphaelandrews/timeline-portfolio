@@ -7,7 +7,7 @@ export const NavWrapper = styled.nav`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: .75rem 1.25rem;
+    padding: .75rem .75rem .75rem 1.25rem;
     //background-color: hsla(210, 40%, 2%, .8);
     backdrop-filter: blur(8px);
     z-index: 1;

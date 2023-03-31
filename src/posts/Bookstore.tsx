@@ -1,6 +1,6 @@
 import { Post } from "@/components";
 import profileImg from "../assets/img/profile.jpeg";
-import mainImg from "../assets/img/bookstore.png";
+import mainImg from "../assets/img/bookstore.webp";
 import { React, TypeScript, StyledComponents, Koa, Node, Prisma, PlanetScale, Vercel } from "@/assets/svg";
 
 export const Bookstore = () => {

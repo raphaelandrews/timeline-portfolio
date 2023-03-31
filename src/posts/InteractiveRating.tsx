@@ -1,7 +1,7 @@
 import { Post } from "@/components";
 import { HTML, CSS, JavaScript } from "@/assets/svg";
 import profileImg from "../assets/img/profile.jpeg";
-import mainImg from "../assets/img/interactive-rating.jpg";
+import mainImg from "../assets/img/interactive-rating.webp";
 
 export const InteractiveRating = () => {
     return (
