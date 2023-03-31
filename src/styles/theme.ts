@@ -7,7 +7,7 @@ export const lightTheme = {
         tertiaryAlt: 'hsl(34, 88%, 44%)',
         quaternary: 'hsl(0, 0%, 86%)',
         quinary: 'hsl(0, 0%, 90%)',
-        alternative: 'hsl(0, 0%, 49%)',
+        alternative: 'hsl(0, 0%, 30%)',
         backgroundAlt: 'hsl(0, 0%, 94%)',
         background: 'hsl(0, 0%, 100%)',
     },

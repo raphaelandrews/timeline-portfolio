@@ -9,7 +9,7 @@ export const ListWrapper = styled.ul`
     padding: 1rem 0 0;
 
     li {
-        font-size: 1rem;
+        font-size: var(--font-size-2);
         color: var(--alt-color);
         text-align: center;
         width: calc(100% / 3);

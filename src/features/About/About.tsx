@@ -5,7 +5,7 @@ import image from "../../assets/img/about-img.png";
 export const About = () => {
   return (
     <C.Wrapper>
-      <Subtitle text="👋 Hello!" margin="0 0 1.5rem" />
+      <Subtitle text="👋 Hello!" fontSize="var(--font-size-5)" margin="0 0 1.5rem" />
       <p>I'm Raphael Andrews, a Frontend Developer who likes to build creative things on the web!</p>
       <p>I specialized in Frontend development but I also build Fullstack projects. For Frontend development,
         I use tools such as React with JavaScript/TypeScript, Styled Components, and TailwindCSS.For the Backend, I use Koa.js and Express.js frameworks to work with Node.js.

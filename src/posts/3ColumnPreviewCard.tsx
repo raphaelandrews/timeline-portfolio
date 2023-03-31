@@ -23,7 +23,7 @@ export const ThreeColumnPreviewCard = () => {
                     <img src={mainImg} alt="3 Column Preview Card" className="post__mainImg" />
                 </a>
             }
-            techs={[<HTML width="1rem" />, <CSS width="1rem" />]}
+            techs={[<HTML/>, <CSS/>]}
         />
     )
 }

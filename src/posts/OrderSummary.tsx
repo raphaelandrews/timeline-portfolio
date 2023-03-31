@@ -23,7 +23,7 @@ export const OrderSummary = () => {
                     <img src={mainImg} alt="Order Summary" className="post__mainImg" />
                 </a>
             }
-            techs={[<HTML width="1rem" />, <CSS width="1rem" />]}
+            techs={[<HTML/>, <CSS/>]}
         />
     )
 }

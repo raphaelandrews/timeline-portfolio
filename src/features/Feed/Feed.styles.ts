@@ -17,6 +17,14 @@ export const Pagination = styled.div`
     .pagination__nav {
         display: flex;
         gap: .5rem;
+
+        span {
+            font-size: var(--font-size-2);
+        }
+    }
+
+    svg {
+        width: var(--font-size-3);
     }
 `
 
@@ -24,6 +32,7 @@ export const InputWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: .75rem;
+    font-size: var(--font-size-2);
 
     @media (min-width: 600px) { 
         right: 1rem;
@@ -38,7 +47,7 @@ export const InputWrapper = styled.div`
 
 export const Input = styled.input`
     font-family: 'Inter', sans-serif;
-    font-size: .875rem;
+    font-size: var(--font-size-2);
     font-weight: 600;
     text-align: center;
     padding: .25rem .5rem;

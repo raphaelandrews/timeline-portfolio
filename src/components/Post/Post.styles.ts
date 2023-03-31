@@ -29,7 +29,7 @@ export const PostDefault = styled.article<PostProps>`
         gap: .5rem;
         
         p {
-            font-size: 1rem;
+            font-size: var(--font-size-2);
             font-weight: 600;
         }
 
@@ -42,7 +42,7 @@ export const PostDefault = styled.article<PostProps>`
         }
         
         time {
-            font-size: .75rem;
+            font-size: var(--font-size-4);
             font-weight: 400;
             color: var(--alt-color);
             margin-top: .2rem;
@@ -51,7 +51,7 @@ export const PostDefault = styled.article<PostProps>`
 
     .post__emoji {
         display: inline-block;
-        font-size: .75rem;
+        font-size: var(--font-size-4);
         font-weight: 500;
         padding: .25rem .75rem;
         margin-top: .25rem;
@@ -60,6 +60,7 @@ export const PostDefault = styled.article<PostProps>`
     }
 
     .post__content {
+        font-size: var(--font-size-2);
         font-weight: 400;
         margin-bottom: 1rem;
 
@@ -82,6 +83,10 @@ export const PostDefault = styled.article<PostProps>`
         span,
         svg {
             display: flex;
+        }
+
+        svg {
+            width: var(--font-size-3);
         }
     }
     

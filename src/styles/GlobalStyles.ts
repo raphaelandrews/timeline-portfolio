@@ -50,6 +50,12 @@ export const GlobalStyles = createGlobalStyle`
     //===== Fonts =====//
     --first-font: ${({ theme }) => theme.fonts.primary};
 
+    --font-size-1: clamp(1.5rem, 1.21rem + 1.46vw, 2rem);
+    --font-size-2: clamp(0.875rem, 0.802rem + 0.366vw, 1rem);
+    --font-size-3: clamp(1rem, 0.854rem + 0.731vw, 1.25rem);
+    --font-size-4: clamp(0.75rem, 0.713rem + 0.183vw, 0.8125rem);
+    --font-size-5: clamp(1.25rem, 0.957rem + 1.463vw, 1.75rem);
+
     //===== Shadows =====//
     --bs-1: hsla(0 ,0% ,20% , .2) 0px 7px 29px 0px;
   }

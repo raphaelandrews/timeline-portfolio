@@ -24,7 +24,7 @@ export const ProfileCardComponent = () => {
                     <img src={mainImg} alt="Profile Card Component" className="post__mainImg" />
                 </a>
             }
-            techs={[<HTML width="1rem" />, <CSS width="1rem" />, <JavaScript width="1rem" />]}
+            techs={[<HTML/>, <CSS/>, <JavaScript/>]}
         />
     )
 }

@@ -25,7 +25,7 @@ export const MovieApp = () => {
                     <img src={mainImg} alt="Movie App Preview" className="post__mainImg" />
                 </a>
             }
-            techs={[<React width="1rem" />]}
+            techs={[<React/>]}
         />
     )
 }

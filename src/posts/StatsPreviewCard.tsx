@@ -23,7 +23,7 @@ export const StatsPreviewCard = () => {
                     <img src={mainImg} alt="Stats Preview Card" className="post__mainImg" />
                 </a>
             }
-            techs={[<HTML width="1rem" />, <CSS width="1rem" />]}
+            techs={[<HTML/>, <CSS/>]}
         />
     )
 }

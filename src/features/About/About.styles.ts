@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
     padding: 0 1rem;
 
     p {
+        font-size: var(--font-size-2);
         font-weight: 400;
         margin-bottom: 1.5rem;
 
@@ -25,7 +26,7 @@ export const Wrapper = styled.div`
     }
 
     figcaption {
-        font-size: .8rem;
+        font-size: var(--font-size-4);
         font-weight: 400;
         color: var(--alt-color);
         text-align: center;

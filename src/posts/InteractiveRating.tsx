@@ -23,7 +23,7 @@ export const InteractiveRating = () => {
                     <img src={mainImg} alt="Interactive Rating" className="post__mainImg" />
                 </a>
             }
-            techs={[<HTML width="1rem" />, <CSS width="1rem" />, <JavaScript width="1rem" />]}
+            techs={[<HTML/>, <CSS/>, <JavaScript/>]}
         />
     )
 }

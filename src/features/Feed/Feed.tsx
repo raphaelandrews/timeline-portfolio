@@ -53,7 +53,6 @@ export const Feed = () => {
     }
   }, [currentPage]);
 
-
   return (
     <C.FeedWrapper>
       {itemsToRender}
