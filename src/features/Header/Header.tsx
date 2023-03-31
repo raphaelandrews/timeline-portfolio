@@ -1,5 +1,4 @@
-import { useState } from 'react';
-
+import { Helmet } from 'react-helmet';
 import * as C from './Header.styles';
 import { Container, Title } from '@/components';
 import { Verified } from '@/assets/svg';
@@ -11,6 +10,9 @@ import profileImg from "../../assets/img/profile-resized.webp";
 export const Header = () => {
   return (
     <C.Header>
+      <Helmet>
+        <link rel="preload" as="image" href="../../assets/img/retrowave-sunset-resized.webp" />
+      </Helmet>
       <Container width='100%' maxWidth='780px'>
         <>
           <C.Background src={bg} alt="Profile Wallpaper" />
@@ -27,7 +29,7 @@ export const Header = () => {
             <C.Text fontWeight='400' margin='1.5rem 0 0 0' marginMD='1.5rem 0 0 1rem'>🔥 Building creative things on web </C.Text>
             <C.Text fontWeight='400' margin='.5rem 0 0 0' marginMD='.5rem 0 0 1rem'>💾 Frontend Developer. JavaScript. TypeScript. React. NodeJS. KoaJS. Prisma</C.Text>
           </C.Wrapper>
-          </>
+        </>
       </Container>
     </C.Header>
   )
