@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <C.Header>
       <Helmet>
-        <link rel="preload" as="image" href="../../assets/img/retrowave-sunset-resized.webp" />
+        <link rel="preload" as="image" href="./src/assets/img/retrowave-sunset-resized.webp" />
       </Helmet>
       <Container width='100%' maxWidth='780px'>
         <>
