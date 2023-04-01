@@ -30,7 +30,7 @@ export const Link = styled.a<LinkProps>`
         gap: .5rem;
         font-size: 1.25rem;
         font-weight: 600;
+        color: #fff;
         height: 100%;
-
     }
 `

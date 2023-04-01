@@ -52,7 +52,7 @@ export const Feed = () => {
       (inputRef.current as HTMLInputElement).value = currentPage.toString();
     }
   }, [currentPage]);
-
+  
   return (
     <C.FeedWrapper>
       {itemsToRender}

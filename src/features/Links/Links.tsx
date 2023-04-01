@@ -6,8 +6,8 @@ export const Links = () => {
     <C.Wrapper>
       <C.Link download href="../../assets/pdf/cv-raphael-andrews.pdf" target="_blank" backgroundColor="var(--second-color)">
         <div>
-          <Logo height="80%" color="var(--first-color)" />
-          <span>Andrews CV</span>
+          <Logo height="80%" color="#fff" />
+          <span>Download CV</span>
         </div>
         <Download width="1.25rem" color="#fff" />
       </C.Link>
