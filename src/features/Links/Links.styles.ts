@@ -23,4 +23,14 @@ export const Link = styled.a<LinkProps>`
     padding: 1rem 2rem;
     border-radius: 1.25rem;
     background-color: ${(props) => props.backgroundColor};
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #fff;
+        height: 100%;
+    }
 `

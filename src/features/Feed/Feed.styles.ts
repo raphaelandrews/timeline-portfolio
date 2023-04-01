@@ -16,7 +16,8 @@ export const Pagination = styled.div`
 
     .pagination__nav {
         display: flex;
-        gap: .5rem;
+        gap: .75rem;
+        align-items: center;
 
         span {
             font-size: var(--font-size-2);
@@ -24,7 +25,7 @@ export const Pagination = styled.div`
     }
 
     svg {
-        width: var(--font-size-3);
+        width: var(--font-size-6);
     }
 `
 

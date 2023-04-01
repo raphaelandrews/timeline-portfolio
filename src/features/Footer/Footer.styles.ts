@@ -8,7 +8,7 @@ export const Footer = styled.footer`
     gap: .25rem;
     font-size: var(--font-size-4);
     color: var(--alt-color);
-    padding: 6rem 2rem 2rem;
+    padding: 4rem 2rem 1.5rem;
 
     span {
         display: flex;

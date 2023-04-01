@@ -21,3 +21,4 @@ export { ExternalLink } from "./ExternalLink";
 export { Gmail } from "./Gmail";
 export { LinkedIn } from "./LinkedIn";
 export { Close } from "./Close";
+export { Download } from "./Download";
