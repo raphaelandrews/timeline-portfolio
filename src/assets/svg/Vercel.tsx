@@ -9,6 +9,7 @@ export const Vercel: React.FC<IconTypes> = (props: IconTypes) => {
             fill="var(--first-color)"
             viewBox="0 0 512 512"
         >
+            <title>Vercel</title>
             <path
                 d="M256,48,496,464H16Z"
                 fillRule="evenodd"

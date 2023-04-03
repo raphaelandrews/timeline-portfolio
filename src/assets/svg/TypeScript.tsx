@@ -10,6 +10,7 @@ export const TypeScript: React.FC<IconTypes> = (props: IconTypes) => {
             fill="none"
             aria-label="TS icon"
         >
+            <title>TypeScript</title>
             <rect
                 fill="#3178c6"
                 width="512"

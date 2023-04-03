@@ -87,6 +87,7 @@ export const PostDefault = styled.article<PostProps>`
 
         svg {
             width: var(--font-size-3);
+            aspect-ratio: 1/1;
         }
     }
     

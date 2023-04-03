@@ -9,6 +9,7 @@ export const ColorSwatch: React.FC<IconTypes> = (props: IconTypes) => {
             fill="none"
             aria-label="Color Swatch icon"
             >
+                <title>Color Swatch</title>
             <path
                 stroke="var(--first-color)"
                 strokeLinecap="round"

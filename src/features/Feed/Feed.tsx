@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import * as C from "./Feed.styles";
-import { InteractiveRating, OrderSummary, ThreeColumnPreviewCard, QRcode, ProfileCardComponent, NftCard, MovieApp, AndrewsOS, EcommerceProductPage, Bookstore } from "@/posts";
+import { InteractiveRating, OrderSummary, ThreeColumnPreviewCard, QRcode, ProfileCardComponent, NftCard, MovieApp, AndrewsOS, EcommerceProductPage, Bookstore, NextTwitter } from "@/posts";
 import { Button } from "@/components";
 import { StatsPreviewCard } from "@/posts/StatsPreviewCard";
 import { Next, Previous } from "@/assets/svg";
@@ -16,6 +16,7 @@ export const Feed = () => {
   const endIndex = startIndex + itemsPerPage;
   
   const itemsToRender = [
+    <NextTwitter key="next-twitter" />,
     <Bookstore key="bookstore" />,
     <EcommerceProductPage key="ecommerce-product-page" />,
     <AndrewsOS key="andrewsOS" />,

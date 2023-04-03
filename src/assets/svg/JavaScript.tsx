@@ -9,6 +9,7 @@ export const JavaScript: React.FC<IconTypes> = (props: IconTypes) => {
             viewBox="0 0 1052 1052"
             aria-label="JS icon"
         >
+            <title>JavaScript</title>
             <path
                 fill="#f0db4f"
                 d="M0 0h1052v1052H0z"
