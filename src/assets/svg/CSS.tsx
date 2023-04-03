@@ -10,6 +10,7 @@ export const CSS: React.FC<IconTypes> = (props: IconTypes) => {
             fill="none"
             aria-label="CSS icon"
         >
+            <title>CSS</title>
             <path
                 d="M10.383 126.892L0 0l124 .255-10.979 126.637-50.553 14.638z"
                 fill="#1b73ba"

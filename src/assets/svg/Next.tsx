@@ -13,7 +13,8 @@ export const Next: React.FC<IconTypes> = (props: IconTypes) => {
             strokeLinecap="round"
             strokeLinejoin="round"
             aria-label="Next icon"
-            >
+        >
+            <title>Next</title>
             <polyline points="9 18 15 12 9 6"></polyline>
         </svg>
     );

@@ -8,6 +8,7 @@ export const StyledComponents: React.FC<IconTypes> = (props: IconTypes) => {
             width={props.width}
             height={props.height}
         >
+            <title>Styled-Components</title>
             <defs>
                 <path
                     id="a"

@@ -3,6 +3,7 @@ import { IconTypes } from "../../types/Types";
 export const Gmail: React.FC<IconTypes> = (props: IconTypes) => {
     return (
         <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 104 26" width={props.width} height={props.height}>
+            <title>Gmail</title>
             <g transform="matrix(.283013 0 0 .283013 9.496014 18.862554)">
                 <path d="M76.8,19.7h-96.4c-3.8,0-6.9-3-6.9-6.8v-66.7c0-3.8,3.1-6.9,6.9-6.9h96.4c3.8,0,6.9,3.1,6.9,6.9v66.6
                     C83.7,16.7,80.6,19.6,76.8,19.7L76.8,19.7z" fill="#221F1F" opacity="0.1" enableBackground="new"/>

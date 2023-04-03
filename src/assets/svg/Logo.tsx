@@ -10,6 +10,7 @@ export const Logo: React.FC<IconTypes> = (props: IconTypes) => {
         fill="none"
         aria-label="Logo icon"
         >
+            <title>Ndrws</title>
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"

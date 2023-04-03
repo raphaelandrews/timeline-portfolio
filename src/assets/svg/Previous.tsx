@@ -14,6 +14,7 @@ export const Previous: React.FC<IconTypes> = (props: IconTypes) => {
             strokeLinejoin="round"
             aria-label="Previous icon"
         >
+            <title>Previous</title>
             <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
     );
