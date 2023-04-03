@@ -8,7 +8,7 @@ export const NextTwitter = () => {
         <Post
             img={profileImg}
             user="Andrews"
-            date="28 mar 2023"
+            date="02 abr 2023"
             emoji="🐦 NextBird.js"
             content={
                 <>
