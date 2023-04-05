@@ -1,10 +1,12 @@
 import { Download, ExternalLink, Github, Gmail, LinkedIn, Logo } from "@/assets/svg";
 import * as C from "./Links.styles";
 
+import cv from "../../assets/pdf/cv-raphael-andrews.pdf"
+
 export const Links = () => {
   return (
     <C.Wrapper>
-      <C.Link download href="../../assets/pdf/cv-raphael-andrews.pdf" target="_blank" backgroundColor="var(--second-color)">
+      <C.Link download href={cv} backgroundColor="var(--second-color)">
         <div>
           <Logo height="80%" color="#fff" />
           <span>Download CV</span>
