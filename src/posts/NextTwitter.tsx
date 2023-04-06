@@ -24,7 +24,7 @@ export const NextTwitter = () => {
                     <img src={mainImg} alt="Next.js Twitter" className="post__mainImg" />
                 </a>
             }
-            techs={[<NextJs/>, <React/>, <TypeScript/>, <Tailwind/>, <Prisma/>, <MongoDB/>, <Vercel/>]}
+            techs={[<NextJs/>, <TypeScript/>, <Tailwind/>, <Prisma/>, <MongoDB/>, <Vercel/>]}
         />
     )
 }
