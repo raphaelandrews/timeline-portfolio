@@ -9,3 +9,4 @@ export { AndrewsOS } from "./AndrewsOS";
 export { EcommerceProductPage } from "./EcommerceProductPage";
 export { Bookstore } from "./Bookstore";
 export { NextTwitter } from "./NextTwitter";
+export { NextAirbnb } from "./NextAirbnb";
