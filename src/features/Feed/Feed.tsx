@@ -8,7 +8,7 @@ import { Next, Previous } from "@/assets/svg";
 export const Feed = () => {
   const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
-  const numItems = 8;
+  const numItems = 13;
 
   const totalPages = Math.ceil(numItems / itemsPerPage);
 
